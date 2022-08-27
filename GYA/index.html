@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"> 
+     <title>Guarding Your Angels Inc.</title>
+     <img src="images/header/flag_banner.jpg" width=100%>
+</head>
+<body>
+
+  <!--Navbar-->
+     <nav class="navbar">
+     <!-- LOGO -->
+     <a href="index.html" class="logo">Guarding Your Angels Inc.</a>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+     <!-- USING CHECKBOX HACK -->
+     <input type="checkbox" id="checkbox_toggle" />
+     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+     <!-- NAVIGATION MENUS -->
+     <div class="menu">
+     <li>
+         <a href="index.html" class="middle">Home</a>
+        </li>
+     <li>
+         <a href="#aboutpage" class="middle">About</a>
+        </li>
+      <li>
+          <a href="#locations" class="middle">Locations</a>
+         </li>
+     <li>
+         <a href="contact.html" class="middle">Contact</a>
+        </li>
+     </div>
+    </ul>
+    </nav>
+
+   
+
+
+
+
+<!--HOME Page-->
+
+    <!--Slideshow-->
+<section class="home">
+
+<div class="slideshow">
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+        <div class="numbertext">1 / 7</div>
+        <img src="images/classrooms/outdoors.JPG" style="width:100%">
+        <div class="text">Outdoor Playground & Sandbox</div>
+      </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="images/slider/playground_2.JPG" style="width:100%">
+  <div class="text">Indoor Playground</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="images/classrooms/infant.jpg"  style="width:100%">
+  <div class="text">Infant Classroom</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="images/classrooms/Mexico.jpg" style="width:100%">
+    <div class="text">1 - 2 Years Old Classroom</div>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="images/classrooms/2.jpg" style="width:100%">
+  <div class="text">2 Year Old Classroom</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="images/classrooms/25.jpg" style="width:100%">
+    <div class="text">2 1/2 Year Old Classroom</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="images/classrooms/afterschool.jpg" style="width:100%">
+    <div class="text">Preschool & Afterschool Classroom</div>
+  </div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+    <!-- Intro -->
+
+<div class="intro">
+    <div>
+  <h1><id class="imagine">Imagine. </id><id class="make"> Make.</id><id class="believe"> Believe.</id></h1>
+<div>
+<p>Your goal?<br> To give your child the best possible start in life. <br>Ours? <br>To bring you the best possible child care.</p>
+</div>
+</div>
+</section>
+
+
+<!-- About Page-->
+
+
+<section id="aboutpage">
+  <div class="offer">
+    <h1><img src="images/icons/arrow-left-yellow.png">Here is what we offer</h1>
+    <h2 class="afterschool"><img src='images/icons/clock-icon.png' width=50px height=50px>Afterschool&nbsp;&nbsp;&nbsp;<id class="kindergarten"><img src='images/icons/plane-icon.png' width=50px height=50px>Kindergarten</id></h2>
+    <h2 class="toddler"><img src='images/icons/toddler-icon.png' width=50px height=50px>Toddler Care&nbsp;&nbsp;&nbsp;<id class="infant"><img src='images/icons/tent-icon.png' width=50px height=50px>Infant Care</id></h2>
+  </div>
+  
+<div class="about">
+    <div>
+    <div class="some">
+    <h1>Some Things About Us</h1>
+<img src="images/header/main-slider-child-2-min.png" class="aboutpic"></div>
+
+    <h2>It's All About the Kids <img src="images/icons/arrow.png"></h2>
+
+    <div class="healthy"><h3>Healthy Meals</h3><br>
+    <h4>Guarding Your Angels offers meals that are catered in. 
+      All meals meet the CACFP child meal pattern guidelines.
+         </h4>
+    </div>
+
+       
+        
+<br>
+  <div class="diversity">
+    <h3>Diversity</h3><br>
+    <h4>We are a bilingual center that teaches in English and Spanish. We incorporate the spanish language through music, books, numbers, and art. </h4>
+  </div>
+
+  <div class="mindful">
+    <h3>Mindful Child Care</h3><br>
+    <h4>Children love to explore the world around them, and we want to provide them a peaceful and creative journey of life. 
+        We provide our children with different mindful activities throughout the day like: yoga, breathing exercises, and awareness practices. 
+        Our children will learn to be in touch with their internal and external environments to cultivate social and emotional understanding. 
+    </h4><br>
+  </div>
+<br>
+  <div class="classdojo">
+    <h3>ClassDojo Tracking</h3><br>
+    <h4>At Guarding Your Angels we incorporate an app that allows us to keep track of your children's daily activities and communication with teacher and administration.
+        This app is very useful for you to feel like your involved in your childs day to day. 
+    </h4><br>
+  </div>
+
+  <iframe width="430" height="215" class="classdojovid" src="https://www.youtube.com/embed/oufeciODPuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br>
+  <div class="air">
+    <h3>High Quality Air Filtration System</h3><br>
+    <h4>Having a quality air filtration will reduce the spread of germs.</h4>
+  </div>
+
+  <div class="covid">
+    <h3>COVID-19 Procedures</h3><br>
+    <h4>We follow the CDC guidelines. We disinfect all common spaces daily and toys. </h4>
+  </div>
+<br>
+
+<section id="locations">
+
+  <div class="locations">
+    <h1><img src="images/icons/arrow-left-yellow.png">Locations</h1>
+    <div>
+      <h3><id class="locationtitle">2340 S. 6th St., Milwaukee, WI 53215</id></h3>
+    <div class="locationinfo">
+      <p>Email: <a href="mailto:gyainc@yahoo.com">gyainc@yahoo.com</a>&nbsp&nbsp&nbsp&nbsp Phone: <a href="tel:414-383-3400">414-383-3400</a>&nbsp&nbsp&nbsp&nbsp Address: <a href="https://www.google.com/maps/place/2340+S+6th+St,+Milwaukee,+WI+53215/@43.001971,-87.918492,17z/data=!3m1!4b1!4m5!3m4!1s0x880519e18b7bce0d:0xb36734f84c3ce6bb!8m2!3d43.001971!4d-87.918492" target=”_blank”>2340 S. 6th St., Milwaukee, WI 53215</a></p>
+    </div>
+    <div>
+    <h3><id class="locationtitle"> 1436 West Mitchell St., Milwaukee, WI 53204</id></h3>
+  <div class="locationinfo">
+    <p>Email: <a href="mailto:gyainc@yahoo.com">gyainc@yahoo.com</a>&nbsp&nbsp&nbsp&nbsp Phone: <a href="tel:414-645-1225">414-645-1225</a>&nbsp&nbsp&nbsp&nbsp Address: <a href="https://www.google.com/maps/place/1436+W+Mitchell+St,+Milwaukee,+WI+53204/@43.0123926,-87.9306573,17z/data=!3m1!4b1!4m5!3m4!1s0x880519f705f4531b:0xa5909337fcb95073!8m2!3d43.0123926!4d-87.9306573" target=”_blank”>1436 West Mitchell St., Milwaukee, WI 53204</a></p>
+  </div>
+  <div>
+  <h3><id class="locationtitle">3147 S. 16th St., Milwaukee, WI 53215</id></h3>
+</div>
+<div class="locationinfo">
+  <p>Email: <a href="mailto:gyainc@yahoo.com">gyainc@yahoo.com</a>&nbsp&nbsp&nbsp&nbsp Phone: <a href="tel:414-635-0006">414-635-0006</a>&nbsp&nbsp&nbsp&nbsp Address: <a href="https://www.google.com/maps/place/3147+S+16th+St,+Milwaukee,+WI+53215/@42.9872623,-87.9341122,17z/data=!3m1!4b1!4m5!3m4!1s0x880510b34601edd7:0x730a86a339e1971a!8m2!3d42.9872623!4d-87.9341122" target=”_blank”>3147 S. 16th St., Milwaukee, WI 53215</a></p>
+</div>
+<div>
+<h3><id class="locationtitle">2400 S. 5th Place, Milwaukee, WI 53207</id></h3>
+</div>
+<div class="locationinfo">
+  <p>Email: <a href="mailto:gyainc@yahoo.com">gyainc@yahoo.com</a>&nbsp&nbsp&nbsp&nbsp Phone: <a href="tel:414-383-3400">414-383-3400</a>&nbsp&nbsp&nbsp&nbsp Address: <a href="https://www.google.com/maps/place/2400+S+5th+Pl,+Milwaukee,+WI+53207/@43.0016932,-87.9176792,17z/data=!3m1!4b1!4m5!3m4!1s0x880519e1eafdea47:0xae33c9551badefa4!8m2!3d43.0016932!4d-87.9176792" target=”_blank”>2400 S. 5th Place, Milwaukee, WI 53207</a></p>
+</div>
+    </div>
+  </section>
+
+  <br>
+
+  <div class="footer">
+    <p>e. <a href="mailto:gyainc@yahoo.com">gyainc@yahoo.com</a>&nbsp&nbsp&nbsp&nbsp t. <a href="tel:414-383-3400">414-383-3400</a>&nbsp&nbsp&nbsp&nbsp a. <a href="https://www.google.com/maps/place/2340+S+6th+St,+Milwaukee,+WI+53215/@43.001971,-87.918492,17z/data=!3m1!4b1!4m5!3m4!1s0x880519e18b7bce0d:0xb36734f84c3ce6bb!8m2!3d43.001971!4d-87.918492" target=”_blank”>2340 S. 6th St., Milwaukee, WI 53215</a></p>
+  </div>
+<!-- Contact Page-->
+
+
+</body>
+</html>
